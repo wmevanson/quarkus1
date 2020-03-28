@@ -29,6 +29,7 @@ nb-configuration.xml
 
 # Maven
 target/
+m2-repository/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
