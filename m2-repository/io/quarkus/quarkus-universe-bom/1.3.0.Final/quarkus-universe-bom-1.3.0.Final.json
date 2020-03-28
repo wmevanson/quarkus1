@@ -1,0 +1,4271 @@
+
+{
+    "bom": {
+        "group-id": "io.quarkus",
+        "artifact-id": "quarkus-universe-bom",
+        "version": "1.3.0.Final"
+    },
+    "quarkus-core-version": "1.3.0.Final",
+    "extensions": [
+        {
+            "name": "Quarkus - Core",
+            "metadata": {
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-core",
+            "version": "1.3.0.Final",
+            "description": "Build parent to bring in required dependencies"
+        },
+        {
+            "name": "ArC",
+            "metadata": {
+                "short-name": "CDI",
+                "keywords": [
+                    "arc",
+                    "cdi",
+                    "dependency-injection",
+                    "di"
+                ],
+                "guide": "https://quarkus.io/guides/cdi-reference",
+                "categories": [
+                    "core"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-arc",
+            "version": "1.3.0.Final",
+            "description": "Build time CDI dependency injection"
+        },
+        {
+            "name": "Caffeine",
+            "metadata": {
+                "keywords": [
+                    "cache"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable",
+                "unlisted": "true"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-caffeine",
+            "version": "1.3.0.Final",
+            "description": "A high performance caching library for Java 8+"
+        },
+        {
+            "name": "JAXB",
+            "metadata": {
+                "keywords": [
+                    "resteasy-jaxb",
+                    "resteasy",
+                    "jaxb",
+                    "xml"
+                ],
+                "categories": [
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jaxb",
+            "version": "1.3.0.Final",
+            "description": "XML serialization support"
+        },
+        {
+            "name": "Jackson",
+            "metadata": {
+                "keywords": [
+                    "jackson",
+                    "json"
+                ],
+                "categories": [
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jackson",
+            "version": "1.3.0.Final",
+            "description": "Jackson Databind support"
+        },
+        {
+            "name": "JSON-B",
+            "metadata": {
+                "keywords": [
+                    "jsonb",
+                    "json-b",
+                    "json"
+                ],
+                "guide": "https://quarkus.io/guides/rest-json",
+                "categories": [
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jsonb",
+            "version": "1.3.0.Final",
+            "description": "JSON Binding support"
+        },
+        {
+            "name": "JSON-P",
+            "metadata": {
+                "keywords": [
+                    "jsonp",
+                    "json-p",
+                    "json"
+                ],
+                "categories": [
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jsonp",
+            "version": "1.3.0.Final",
+            "description": "JSON Processing support"
+        },
+        {
+            "name": "Netty",
+            "metadata": {
+                "categories": [
+                    "web"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-netty",
+            "version": "1.3.0.Final",
+            "description": "Netty is a non-blocking I/O client-server framework. Used by Quarkus as foundation layer."
+        },
+        {
+            "name": "Agroal - Database connection pool",
+            "metadata": {
+                "keywords": [
+                    "agroal",
+                    "database-connection-pool",
+                    "datasource",
+                    "jdbc"
+                ],
+                "guide": "https://quarkus.io/guides/datasource",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-agroal",
+            "version": "1.3.0.Final",
+            "description": "Pool JDBC database connections (included in Hibernate ORM)"
+        },
+        {
+            "name": "Artemis Core",
+            "metadata": {
+                "keywords": [
+                    "artemis-core",
+                    "artemis"
+                ],
+                "categories": [
+                    "messaging"
+                ],
+                "guide": "https://quarkus.io/guides/jms",
+                "status": "preview",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-artemis-core",
+            "version": "1.3.0.Final",
+            "description": "Use ActiveMQ Artemis as message broker"
+        },
+        {
+            "name": "Artemis JMS",
+            "metadata": {
+                "keywords": [
+                    "artemis-jms",
+                    "artemis"
+                ],
+                "guide": "https://quarkus.io/guides/jms",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-artemis-jms",
+            "version": "1.3.0.Final",
+            "description": "Use JMS APIs to connect to ActiveMQ Artemis via its native protocol"
+        },
+        {
+            "name": "YAML Configuration",
+            "metadata": {
+                "keywords": [
+                    "config",
+                    "configuration",
+                    "yaml"
+                ],
+                "categories": [
+                    "core"
+                ],
+                "status": "stable",
+                "guide": "https://quarkus.io/guides/config#yaml"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-config-yaml",
+            "version": "1.3.0.Final",
+            "description": "Use YAML to configure your Quarkus application"
+        },
+        {
+            "name": "Datasource configuration",
+            "metadata": {
+                "keywords": [
+                    "datasource"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-datasource",
+            "version": "1.3.0.Final",
+            "description": "Configure your datasources"
+        },
+        {
+            "name": "Elasticsearch REST Client",
+            "metadata": {
+                "keywords": [
+                    "search"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable",
+                "unlisted": "true"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elasticsearch-rest-client",
+            "version": "1.3.0.Final",
+            "description": "Elasticsearch REST client"
+        },
+        {
+            "name": "Security",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "security"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-security",
+            "version": "1.3.0.Final",
+            "description": "Security"
+        },
+        {
+            "name": "Elytron Security Common",
+            "metadata": {
+                "keywords": [
+                    "security"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "stable": "true",
+                "unlisted": "true"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security-common",
+            "version": "1.3.0.Final",
+            "description": "Build parent to bring in required dependencies"
+        },
+        {
+            "name": "Elytron Security",
+            "metadata": {
+                "keywords": [
+                    "security"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "stable": "true",
+                "unlisted": "true"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security",
+            "version": "1.3.0.Final",
+            "description": "Secure your services via Elytron"
+        },
+        {
+            "name": "Elytron Security Properties File",
+            "metadata": {
+                "keywords": [
+                    "security"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "status": "stable",
+                "guide": "https://quarkus.io/guides/security-properties"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security-properties-file",
+            "version": "1.3.0.Final",
+            "description": "Secure your applications using properties files"
+        },
+        {
+            "name": "Elytron Security OAuth 2.0",
+            "metadata": {
+                "keywords": [
+                    "security",
+                    "oauth2"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "guide": "https://quarkus.io/guides/security-oauth2",
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security-oauth2",
+            "version": "1.3.0.Final",
+            "description": "Secure your applications with OAuth2 opaque tokens"
+        },
+        {
+            "name": "OpenID Connect",
+            "metadata": {
+                "keywords": [
+                    "oauth2",
+                    "openid-connect",
+                    "oidc"
+                ],
+                "guide": "https://quarkus.io/guides/security-openid-connect",
+                "categories": [
+                    "security"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-oidc",
+            "version": "1.3.0.Final",
+            "description": "Secure your applications with OpenID Connect Adapter and IDP such as Keycloak"
+        },
+        {
+            "name": "Keycloak Authorization",
+            "metadata": {
+                "keywords": [
+                    "oauth2",
+                    "openid-connect",
+                    "keycloak",
+                    "authorization-services",
+                    "policy-enforcer",
+                    "fine-grained-permission",
+                    "resource-based-authorization"
+                ],
+                "guide": "https://quarkus.io/guides/security-keycloak-authorization",
+                "categories": [
+                    "security"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-keycloak-authorization",
+            "version": "1.3.0.Final",
+            "description": "Policy enforcer using Keycloak-managed permissions to control access to protected resources"
+        },
+        {
+            "name": "Flyway",
+            "metadata": {
+                "keywords": [
+                    "flyway",
+                    "database",
+                    "data"
+                ],
+                "guide": "https://quarkus.io/guides/flyway",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-flyway",
+            "version": "1.3.0.Final",
+            "description": "Handle your database schema migrations"
+        },
+        {
+            "name": "Liquibase",
+            "metadata": {
+                "keywords": [
+                    "liquibase",
+                    "database",
+                    "data"
+                ],
+                "guide": "https://quarkus.io/guides/liquibase",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-liquibase",
+            "version": "1.3.0.Final",
+            "description": "Handle your database schema migrations with Liquibase"
+        },
+        {
+            "name": "Hibernate ORM",
+            "metadata": {
+                "short-name": "JPA",
+                "keywords": [
+                    "hibernate-orm",
+                    "jpa",
+                    "hibernate"
+                ],
+                "guide": "https://quarkus.io/guides/hibernate-orm",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-hibernate-orm",
+            "version": "1.3.0.Final",
+            "description": "Define your persistent model with Hibernate ORM and JPA"
+        },
+        {
+            "name": "Hibernate ORM with Panache",
+            "metadata": {
+                "keywords": [
+                    "hibernate-orm-panache",
+                    "panache",
+                    "hibernate",
+                    "jpa"
+                ],
+                "guide": "https://quarkus.io/guides/hibernate-orm-panache",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-hibernate-orm-panache",
+            "version": "1.3.0.Final",
+            "description": "Simplify your persistence code for Hibernate ORM via the active record or the repository pattern"
+        },
+        {
+            "name": "MongoDB with Panache",
+            "metadata": {
+                "keywords": [
+                    "mongo",
+                    "mongodb",
+                    "nosql",
+                    "datastore",
+                    "panache"
+                ],
+                "guide": "https://quarkus.io/guides/mongodb-panache",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-mongodb-panache",
+            "version": "1.3.0.Final",
+            "description": "Simplify your persistence code for MongoDB via the active record or the repository pattern"
+        },
+        {
+            "name": "Hibernate Search + Elasticsearch",
+            "metadata": {
+                "keywords": [
+                    "hibernate-search-elasticsearch",
+                    "search",
+                    "full-text",
+                    "hibernate",
+                    "elasticsearch"
+                ],
+                "guide": "https://quarkus.io/guides/hibernate-search-elasticsearch",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-hibernate-search-elasticsearch",
+            "version": "1.3.0.Final",
+            "description": "Automatically index your Hibernate entities in Elasticsearch"
+        },
+        {
+            "name": "Hibernate Validator",
+            "metadata": {
+                "short-name": "bean validation",
+                "keywords": [
+                    "hibernate-validator",
+                    "bean-validation",
+                    "validation"
+                ],
+                "guide": "https://quarkus.io/guides/validation",
+                "categories": [
+                    "web",
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-hibernate-validator",
+            "version": "1.3.0.Final",
+            "description": "Validate object properties (field, getter) and method parameters for your beans (REST, CDI, JPA)"
+        },
+        {
+            "name": "Infinispan Client",
+            "metadata": {
+                "keywords": [
+                    "infinispan-client",
+                    "data-grid-client",
+                    "infinispan"
+                ],
+                "guide": "https://quarkus.io/guides/infinispan-client",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-infinispan-client",
+            "version": "1.3.0.Final",
+            "description": "Connect to the Infinispan data grid for distributed caching"
+        },
+        {
+            "name": "Infinispan Embedded",
+            "metadata": {
+                "unlisted": "true",
+                "status": "preview",
+                "keywords": [
+                    "infinispan"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "guide": "https://quarkus.io/guides/infinispan-embedded"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-infinispan-embedded",
+            "version": "1.3.0.Final",
+            "description": "Build parent to bring in required dependencies"
+        },
+        {
+            "name": "Jaeger",
+            "metadata": {
+                "keywords": [
+                    "tracing",
+                    "distributed-tracing",
+                    "jaeger"
+                ],
+                "categories": [
+                    "observability"
+                ],
+                "unlisted": true,
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jaeger",
+            "version": "1.3.0.Final",
+            "description": "Trace your services with Jaeger"
+        },
+        {
+            "name": "JDBC Driver - PostgreSQL",
+            "metadata": {
+                "keywords": [
+                    "jdbc-postgresql",
+                    "jdbc",
+                    "postgresql"
+                ],
+                "categories": [
+                    "data"
+                ]
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-postgresql",
+            "version": "1.3.0.Final",
+            "description": "Connect to the PostgreSQL database via JDBC"
+        },
+        {
+            "name": "JDBC Driver - H2",
+            "metadata": {
+                "keywords": [
+                    "jdbc-h2",
+                    "jdbc",
+                    "h2"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-h2",
+            "version": "1.3.0.Final",
+            "description": "Connect to the H2 database via JDBC"
+        },
+        {
+            "name": "JDBC Driver - MariaDB",
+            "metadata": {
+                "keywords": [
+                    "jdbc-mariadb",
+                    "jdbc",
+                    "mariadb"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-mariadb",
+            "version": "1.3.0.Final",
+            "description": "Connect to the MariaDB database via JDBC"
+        },
+        {
+            "name": "JDBC Driver - Microsoft SQL Server",
+            "metadata": {
+                "keywords": [
+                    "jdbc-mssql",
+                    "jdbc",
+                    "mssql",
+                    "sql-server"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-mssql",
+            "version": "1.3.0.Final",
+            "description": "Connect to the Microsoft SQL Server database via JDBC"
+        },
+        {
+            "name": "JDBC Driver - MySQL",
+            "metadata": {
+                "keywords": [
+                    "jdbc-mysql",
+                    "jdbc",
+                    "mysql"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-mysql",
+            "version": "1.3.0.Final",
+            "description": "Connect to the MySQL database via JDBC"
+        },
+        {
+            "name": "JDBC Driver - Derby",
+            "metadata": {
+                "keywords": [
+                    "jdbc-derby",
+                    "jdbc",
+                    "derby"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-derby",
+            "version": "1.3.0.Final",
+            "description": "Connect to the Derby database via JDBC"
+        },
+        {
+            "name": "Apache Kafka Client",
+            "metadata": {
+                "keywords": [
+                    "kafka"
+                ],
+                "guide": "https://quarkus.io/guides/kafka",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kafka-client",
+            "version": "1.3.0.Final",
+            "description": "Connect to Apache Kafka with its native API"
+        },
+        {
+            "name": "Apache Kafka Streams",
+            "metadata": {
+                "keywords": [
+                    "kafka",
+                    "kafka-streams"
+                ],
+                "categories": [
+                    "messaging"
+                ],
+                "guide": "https://quarkus.io/guides/kafka-streams",
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kafka-streams",
+            "version": "1.3.0.Final",
+            "description": "Implement stream processing applications based on Apache Kafka"
+        },
+        {
+            "name": "SmallRye Health",
+            "metadata": {
+                "short-name": "health",
+                "keywords": [
+                    "smallrye-health",
+                    "health-check",
+                    "health",
+                    "microprofile-health",
+                    "microprofile-health-check"
+                ],
+                "guide": "https://quarkus.io/guides/microprofile-health",
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-health",
+            "version": "1.3.0.Final",
+            "description": "Monitor service health"
+        },
+        {
+            "name": "SmallRye JWT",
+            "metadata": {
+                "keywords": [
+                    "smallrye-jwt",
+                    "jwt",
+                    "json-web-token",
+                    "rbac"
+                ],
+                "guide": "https://quarkus.io/guides/security-jwt",
+                "categories": [
+                    "web",
+                    "security"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-jwt",
+            "version": "1.3.0.Final",
+            "description": "Secure your applications with JSON Web Token"
+        },
+        {
+            "name": "SmallRye Context Propagation",
+            "metadata": {
+                "short-name": "context propagation",
+                "keywords": [
+                    "smallrye-context-propagation",
+                    "microprofile-context-propagation",
+                    "context-propagation",
+                    "context",
+                    "reactive"
+                ],
+                "guide": "https://quarkus.io/guides/context-propagation",
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-context-propagation",
+            "version": "1.3.0.Final",
+            "description": "Propagate contexts between managed threads in reactive applications"
+        },
+        {
+            "name": "SmallRye Reactive Streams Operators",
+            "metadata": {
+                "keywords": [
+                    "smallrye-reactive-streams-operators",
+                    "smallrye-reactive-streams",
+                    "reactive-streams-operators",
+                    "reactive-streams",
+                    "microprofile-reactive-streams",
+                    "reactive"
+                ],
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-streams-operators",
+            "version": "1.3.0.Final",
+            "description": "Operators to write Reactive Streams based applications (Mutiny recommended instead)"
+        },
+        {
+            "name": "SmallRye Reactive Type Converters",
+            "metadata": {
+                "keywords": [
+                    "smallrye-reactive-type-converters",
+                    "reactive-type-converters",
+                    "reactive-streams-operators",
+                    "reactive-streams",
+                    "microprofile-reactive-streams",
+                    "reactive"
+                ],
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-type-converters",
+            "version": "1.3.0.Final",
+            "description": "Converters for reactive types from various reactive programming libraries"
+        },
+        {
+            "name": "SmallRye Reactive Messaging",
+            "metadata": {
+                "keywords": [
+                    "smallrye-reactive-messaging",
+                    "reactive-messaging",
+                    "reactive"
+                ],
+                "guide": "https://quarkus.io/guides/reactive-messaging",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-messaging",
+            "version": "1.3.0.Final",
+            "description": "Produce and consume messages and implement event driven and data streaming applications"
+        },
+        {
+            "name": "SmallRye Reactive Messaging - Kafka Connector",
+            "metadata": {
+                "short-name": "kafka",
+                "keywords": [
+                    "kafka",
+                    "reactive-kafka"
+                ],
+                "guide": "https://quarkus.io/guides/kafka",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-messaging-kafka",
+            "version": "1.3.0.Final",
+            "description": "Connect to Kafka with Reactive Messaging"
+        },
+        {
+            "name": "SmallRye Reactive Messaging - AMQP Connector",
+            "metadata": {
+                "short-name": "amqp",
+                "keywords": [
+                    "amqp",
+                    "reactive-amqp"
+                ],
+                "guide": "https://quarkus.io/guides/amqp",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-messaging-amqp",
+            "version": "1.3.0.Final",
+            "description": "Connect to AMQP with Reactive Messaging"
+        },
+        {
+            "name": "SmallRye Reactive Messaging - MQTT Connector",
+            "metadata": {
+                "keywords": [
+                    "mqtt",
+                    "reactive-mqtt"
+                ],
+                "categories": [
+                    "messaging"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-messaging-mqtt",
+            "version": "1.3.0.Final",
+            "description": "Connect to MQTT with Reactive Messaging"
+        },
+        {
+            "name": "SmallRye Metrics",
+            "metadata": {
+                "short-name": "metrics",
+                "keywords": [
+                    "smallrye-metrics",
+                    "metrics",
+                    "metric",
+                    "prometheus",
+                    "monitoring"
+                ],
+                "guide": "https://quarkus.io/guides/microprofile-metrics",
+                "categories": [
+                    "observability"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-metrics",
+            "version": "1.3.0.Final",
+            "description": "Expose metrics for your services"
+        },
+        {
+            "name": "SmallRye OpenAPI",
+            "metadata": {
+                "keywords": [
+                    "smallrye-openapi",
+                    "openapi",
+                    "open-api"
+                ],
+                "guide": "https://quarkus.io/guides/openapi-swaggerui",
+                "categories": [
+                    "web"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-openapi",
+            "version": "1.3.0.Final",
+            "description": "Document your REST APIs with OpenAPI - comes with Swagger UI"
+        },
+        {
+            "name": "SmallRye OpenTracing",
+            "metadata": {
+                "keywords": [
+                    "smallrye-opentracing",
+                    "opentracing",
+                    "tracing",
+                    "distributed-tracing",
+                    "jaeger"
+                ],
+                "guide": "https://quarkus.io/guides/opentracing",
+                "categories": [
+                    "observability"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-opentracing",
+            "version": "1.3.0.Final",
+            "description": "Trace your services with Jaeger"
+        },
+        {
+            "name": "REST Client",
+            "metadata": {
+                "keywords": [
+                    "rest-client",
+                    "web-client",
+                    "microprofile-rest-client"
+                ],
+                "guide": "https://quarkus.io/guides/rest-client",
+                "categories": [
+                    "web"
+                ]
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-rest-client",
+            "version": "1.3.0.Final",
+            "description": "Call REST services"
+        },
+        {
+            "name": "RESTEasy JAX-RS Common",
+            "metadata": {
+                "keywords": [
+                    "resteasy",
+                    "jaxrs",
+                    "web",
+                    "rest"
+                ],
+                "categories": [
+                    "web"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-common",
+            "version": "1.3.0.Final",
+            "description": "REST framework implementing JAX-RS and more"
+        },
+        {
+            "name": "RESTEasy JAX-RS",
+            "metadata": {
+                "short-name": "jax-rs",
+                "keywords": [
+                    "resteasy",
+                    "jaxrs",
+                    "web",
+                    "rest"
+                ],
+                "guide": "https://quarkus.io/guides/rest-json",
+                "categories": [
+                    "web"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy",
+            "version": "1.3.0.Final",
+            "description": "REST endpoint framework implementing JAX-RS and more"
+        },
+        {
+            "name": "RESTEasy Jackson",
+            "metadata": {
+                "keywords": [
+                    "resteasy-jackson",
+                    "jaxrs-json",
+                    "resteasy-json",
+                    "resteasy",
+                    "jaxrs",
+                    "json",
+                    "jackson"
+                ],
+                "categories": [
+                    "web",
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-jackson",
+            "version": "1.3.0.Final",
+            "description": "Jackson serialization support for RESTEasy"
+        },
+        {
+            "name": "RESTEasy JSON-B",
+            "metadata": {
+                "keywords": [
+                    "resteasy-jsonb",
+                    "jaxrs-json",
+                    "resteasy-json",
+                    "resteasy",
+                    "jaxrs",
+                    "json",
+                    "jsonb"
+                ],
+                "guide": "https://quarkus.io/guides/rest-json",
+                "categories": [
+                    "web",
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-jsonb",
+            "version": "1.3.0.Final",
+            "description": "JSON-B serialization support for RESTEasy"
+        },
+        {
+            "name": "RESTEasy JAX-B",
+            "metadata": {
+                "keywords": [
+                    "resteasy-jaxb",
+                    "jaxrs-json",
+                    "resteasy-json",
+                    "resteasy",
+                    "jaxrs",
+                    "json",
+                    "jaxb",
+                    "jax-b"
+                ],
+                "categories": [
+                    "web",
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-jaxb",
+            "version": "1.3.0.Final",
+            "description": "XML serialization support for RESTEasy"
+        },
+        {
+            "name": "RESTEasy Server Common",
+            "metadata": {
+                "keywords": [
+                    "resteasy",
+                    "jaxrs",
+                    "web",
+                    "rest"
+                ],
+                "guide": "https://quarkus.io/guides/rest-json",
+                "categories": [
+                    "web"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-server-common",
+            "version": "1.3.0.Final",
+            "description": "RESTEasy Server common"
+        },
+        {
+            "name": "Narayana JTA - Transaction manager",
+            "metadata": {
+                "keywords": [
+                    "narayana-jta",
+                    "narayana",
+                    "jta",
+                    "transactions",
+                    "transaction",
+                    "tx",
+                    "txs"
+                ],
+                "guide": "https://quarkus.io/guides/transaction",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-narayana-jta",
+            "version": "1.3.0.Final",
+            "description": "Offer JTA transaction support (included in Hibernate ORM)"
+        },
+        {
+            "name": "Undertow Servlet",
+            "metadata": {
+                "short-name": "servlet",
+                "keywords": [
+                    "undertow",
+                    "servlet"
+                ],
+                "categories": [
+                    "web",
+                    "http"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-undertow",
+            "version": "1.3.0.Final",
+            "description": "Support for servlets"
+        },
+        {
+            "name": "SmallRye Fault Tolerance",
+            "metadata": {
+                "keywords": [
+                    "smallrye-fault-tolerance",
+                    "fault-tolerance",
+                    "microprofile-fault-tolerance",
+                    "circuit-breaker",
+                    "bulkhead"
+                ],
+                "guide": "https://quarkus.io/guides/microprofile-fault-tolerance",
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-fault-tolerance",
+            "version": "1.3.0.Final",
+            "description": "Define fault-tolerant services"
+        },
+        {
+            "name": "Eclipse Vert.x - Core",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive"
+                ],
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx-core",
+            "version": "1.3.0.Final",
+            "description": "Vert.x Core"
+        },
+        {
+            "name": "Eclipse Vert.x",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive"
+                ],
+                "guide": "https://quarkus.io/guides/vertx",
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx",
+            "version": "1.3.0.Final",
+            "description": "Write reactive applications with the Vert.x API"
+        },
+        {
+            "name": "Eclipse Vert.x - HTTP",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive",
+                    "vertx-http",
+                    "http"
+                ],
+                "categories": [
+                    "web",
+                    "reactive"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx-http",
+            "version": "1.3.0.Final",
+            "description": "Vert.x HTTP"
+        },
+        {
+            "name": "Eclipse Vert.x - Web",
+            "metadata": {
+                "keywords": [
+                    "eclipse",
+                    "vertx",
+                    "vert.x",
+                    "reactive",
+                    "vertx-http",
+                    "http",
+                    "route",
+                    "routes"
+                ],
+                "categories": [
+                    "web",
+                    "reactive"
+                ],
+                "status": "stable",
+                "guide": "https://quarkus.io/guides/reactive-routes"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx-web",
+            "version": "1.3.0.Final",
+            "description": "REST framework offering the route model to define non blocking endpoints"
+        },
+        {
+            "name": "Reactive datasource configuration",
+            "metadata": {
+                "keywords": [
+                    "datasource",
+                    "reactive"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-reactive-datasource",
+            "version": "1.3.0.Final",
+            "description": "Configure your reactive datasources"
+        },
+        {
+            "name": "Reactive PostgreSQL client",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive",
+                    "database",
+                    "data",
+                    "postgresql"
+                ],
+                "guide": "https://quarkus.io/guides/reactive-sql-clients",
+                "categories": [
+                    "data",
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-reactive-pg-client",
+            "version": "1.3.0.Final",
+            "description": "Connect to the PostgreSQL database using the reactive pattern"
+        },
+        {
+            "name": "Reactive MySQL client",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive",
+                    "database",
+                    "data",
+                    "mysql"
+                ],
+                "guide": "https://quarkus.io/guides/reactive-sql-clients",
+                "categories": [
+                    "data",
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-reactive-mysql-client",
+            "version": "1.3.0.Final",
+            "description": "Connect to the MySQL database using the reactive pattern"
+        },
+        {
+            "name": "Mailer",
+            "metadata": {
+                "keywords": [
+                    "mail",
+                    "mailer"
+                ],
+                "guide": "https://quarkus.io/guides/mailer",
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-mailer",
+            "version": "1.3.0.Final",
+            "description": "Send emails"
+        },
+        {
+            "name": "MongoDB client",
+            "metadata": {
+                "keywords": [
+                    "mongo",
+                    "mongodb",
+                    "nosql",
+                    "datastore"
+                ],
+                "guide": "https://quarkus.io/guides/mongodb",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-mongodb-client",
+            "version": "1.3.0.Final",
+            "description": "Connect to MongoDB in either imperative or reactive style"
+        },
+        {
+            "name": "Undertow WebSockets",
+            "metadata": {
+                "short-name": "websockets",
+                "keywords": [
+                    "undertow-websockets",
+                    "undertow-websocket",
+                    "websocket",
+                    "websockets",
+                    "web-socket",
+                    "web-sockets",
+                    "http"
+                ],
+                "guide": "https://quarkus.io/guides/websockets",
+                "categories": [
+                    "web"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-undertow-websockets",
+            "version": "1.3.0.Final",
+            "description": "WebSocket communication channel support"
+        },
+        {
+            "name": "Scheduler - tasks",
+            "metadata": {
+                "keywords": [
+                    "scheduler",
+                    "tasks",
+                    "periodic-tasks"
+                ],
+                "guide": "https://quarkus.io/guides/scheduler",
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-scheduler",
+            "version": "1.3.0.Final",
+            "description": "Schedule jobs and tasks"
+        },
+        {
+            "name": "Quartz",
+            "metadata": {
+                "keywords": [
+                    "scheduler",
+                    "quartz",
+                    "tasks",
+                    "periodic-tasks"
+                ],
+                "guide": "https://quarkus.io/guides/quartz",
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-quartz",
+            "version": "1.3.0.Final",
+            "description": "Schedule clustered tasks with Quartz"
+        },
+        {
+            "name": "Quarkus Extension for Spring DI API",
+            "metadata": {
+                "keywords": [
+                    "spring-di",
+                    "spring"
+                ],
+                "guide": "https://quarkus.io/guides/spring-di",
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-di",
+            "version": "1.3.0.Final",
+            "description": "Define your dependency injection with Spring DI"
+        },
+        {
+            "name": "Quarkus Extension for Spring Security API",
+            "metadata": {
+                "keywords": [
+                    "spring-security",
+                    "spring",
+                    "security"
+                ],
+                "guide": "https://quarkus.io/guides/spring-security",
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-security",
+            "version": "1.3.0.Final",
+            "description": "Secure your application with Spring Security annotations"
+        },
+        {
+            "name": "Quarkus Extension for Spring Web API",
+            "metadata": {
+                "keywords": [
+                    "spring-web",
+                    "spring"
+                ],
+                "guide": "https://quarkus.io/guides/spring-web",
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-web",
+            "version": "1.3.0.Final",
+            "description": "Use Spring Web annotations to create your REST services"
+        },
+        {
+            "name": "Quarkus Extension for Spring Data JPA API",
+            "metadata": {
+                "keywords": [
+                    "spring-data",
+                    "spring"
+                ],
+                "guide": "https://quarkus.io/guides/spring-data-jpa",
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-data-jpa",
+            "version": "1.3.0.Final",
+            "description": "Use Spring Data JPA annotations to create your data access layer"
+        },
+        {
+            "name": "Quarkus Extension for Spring Boot properties",
+            "metadata": {
+                "keywords": [
+                    "spring-boot",
+                    "properties"
+                ],
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-boot-properties",
+            "version": "1.3.0.Final",
+            "description": "Use Spring Boot properties annotations to configure your application"
+        },
+        {
+            "name": "Quarkus Extension for Spring Cloud Config Client",
+            "metadata": {
+                "keywords": [
+                    "spring-cloud-config-client",
+                    "spring",
+                    "config",
+                    "configuration"
+                ],
+                "guide": "https://quarkus.io/guides/spring-cloud-config-client",
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-cloud-config-client",
+            "version": "1.3.0.Final",
+            "description": "Use properties from Spring Cloud Config as bootstrap properties sources"
+        },
+        {
+            "name": "Swagger UI",
+            "metadata": {
+                "keywords": [
+                    "swagger-ui",
+                    "openapi"
+                ],
+                "guide": "https://quarkus.io/guides/openapi-swaggerui",
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-swagger-ui",
+            "version": "1.3.0.Final",
+            "description": "Swagger UI"
+        },
+        {
+            "name": "Kotlin",
+            "metadata": {
+                "keywords": [
+                    "kotlin"
+                ],
+                "guide": "https://quarkus.io/guides/kotlin",
+                "categories": [
+                    "alt-languages"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kotlin",
+            "version": "1.3.0.Final",
+            "description": "Write your services in Kotlin"
+        },
+        {
+            "name": "AWS Lambda",
+            "metadata": {
+                "keywords": [
+                    "lambda",
+                    "aws",
+                    "amazon"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/amazon-lambda",
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-amazon-lambda",
+            "version": "1.3.0.Final",
+            "description": "Write AWS Lambda functions"
+        },
+        {
+            "name": "AWS Lambda X-Ray",
+            "metadata": {
+                "keywords": [
+                    "lambda",
+                    "aws",
+                    "amazon",
+                    "xray"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-amazon-lambda-xray",
+            "version": "1.3.0.Final",
+            "description": "Allows X-Ray to run with Quarkus Lambda support"
+        },
+        {
+            "name": "AWS Lambda HTTP",
+            "metadata": {
+                "keywords": [
+                    "lambda",
+                    "aws",
+                    "amazon",
+                    "http",
+                    "rest"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/amazon-lambda-http",
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-amazon-lambda-http",
+            "version": "1.3.0.Final",
+            "description": "Allow applications written for a servlet container to run in AWS Lambda"
+        },
+        {
+            "name": "Amazon DynamoDB client",
+            "metadata": {
+                "keywords": [
+                    "dynamodb",
+                    "dynamo",
+                    "aws",
+                    "amazon"
+                ],
+                "guide": "https://quarkus.io/guides/dynamodb",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-amazon-dynamodb",
+            "version": "1.3.0.Final",
+            "description": "A client for the Amazon DynamoDB datastore"
+        },
+        {
+            "name": "Azure Functions HTTP",
+            "metadata": {
+                "keywords": [
+                    "azure",
+                    "http"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/azure-functions-http",
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-azure-functions-http",
+            "version": "1.3.0.Final",
+            "description": "Write Microsoft Azure functions"
+        },
+        {
+            "name": "Container Image Docker",
+            "metadata": {
+                "keywords": [
+                    "docker",
+                    "container",
+                    "image"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-container-image-docker",
+            "version": "1.3.0.Final",
+            "description": "Build container images of your application using Docker"
+        },
+        {
+            "name": "Container Image Jib",
+            "metadata": {
+                "keywords": [
+                    "jib",
+                    "container",
+                    "image"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-container-image-jib",
+            "version": "1.3.0.Final",
+            "description": "Build container images of your application using Jib"
+        },
+        {
+            "name": "Container Image S2I",
+            "metadata": {
+                "keywords": [
+                    "s2i",
+                    "container",
+                    "image"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-container-image-s2i",
+            "version": "1.3.0.Final",
+            "description": "Build container images of your application using OpenShift S2I"
+        },
+        {
+            "name": "Kubernetes",
+            "metadata": {
+                "keywords": [
+                    "kubernetes"
+                ],
+                "guide": "https://quarkus.io/guides/kubernetes",
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kubernetes",
+            "version": "1.3.0.Final",
+            "description": "Generate Kubernetes resources from annotations"
+        },
+        {
+            "name": "OpenShift",
+            "metadata": {
+                "keywords": [
+                    "kubernetes",
+                    "openshift"
+                ],
+                "guide": "https://quarkus.io/guides/openshift",
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-openshift",
+            "version": "1.3.0.Final",
+            "description": "Generate OpenShift resources from annotations"
+        },
+        {
+            "name": "Kubernetes Client",
+            "metadata": {
+                "keywords": [
+                    "kubernetes-client"
+                ],
+                "guide": "https://quarkus.io/guides/kubernetes-client",
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kubernetes-client",
+            "version": "1.3.0.Final",
+            "description": "Interact with Kubernetes and develop Kubernetes Operators"
+        },
+        {
+            "name": "Kogito",
+            "metadata": {
+                "keywords": [
+                    "kogito",
+                    "drools",
+                    "jbpm",
+                    "processes",
+                    "rules",
+                    "decisions"
+                ],
+                "guide": "https://quarkus.io/guides/kogito",
+                "categories": [
+                    "business-automation"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kogito",
+            "version": "1.3.0.Final",
+            "description": "Add business automation capabilities - processes and rules with Kogito (a toolkit that originates from projects Drools and jBPM)"
+        },
+        {
+            "name": "OptaPlanner constraint solver AI",
+            "metadata": {
+                "keywords": [
+                    "optaplanner",
+                    "kogito",
+                    "constraint-solver",
+                    "artificial-intelligence",
+                    "employee-rostering",
+                    "vehicle-routing-problem",
+                    "maintenance-scheduling",
+                    "timetabling"
+                ],
+                "guide": "https://quarkus.io/guides/optaplanner",
+                "categories": [
+                    "business-automation"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-optaplanner",
+            "version": "1.3.0.Final",
+            "description": "Constraint solving AI for employee rostering, vehicle routing, maintenance scheduling, school timetabling, etc"
+        },
+        {
+            "metadata": {
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-optaplanner-jackson",
+            "version": "1.3.0.Final",
+            "name": "Quarkus - OptaPlanner Jackson - Runtime",
+            "description": "Activate JSON bindings for OptaPlanner's Score classes"
+        },
+        {
+            "name": "Apache Tika",
+            "metadata": {
+                "keywords": [
+                    "tika",
+                    "parser"
+                ],
+                "categories": [
+                    "miscellaneous"
+                ],
+                "guide": "https://quarkus.io/guides/tika",
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-tika",
+            "version": "1.3.0.Final",
+            "description": "Extract data from your documents with Apache Tika"
+        },
+        {
+            "name": "Neo4j client",
+            "metadata": {
+                "keywords": [
+                    "neo4j",
+                    "graph",
+                    "nosql",
+                    "datastore"
+                ],
+                "guide": "https://quarkus.io/guides/neo4j",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-neo4j",
+            "version": "1.3.0.Final",
+            "description": "Connect to Neo4j graph datastore"
+        },
+        {
+            "name": "Scala",
+            "metadata": {
+                "keywords": [
+                    "scala"
+                ],
+                "categories": [
+                    "alt-languages"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-scala",
+            "version": "1.3.0.Final",
+            "description": "Write your services in Scala"
+        },
+        {
+            "name": "JGit",
+            "metadata": {
+                "keywords": [
+                    "git"
+                ],
+                "categories": [
+                    "miscellaneous"
+                ],
+                "guide": "https://quarkus.io/guides/jgit",
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jgit",
+            "version": "1.3.0.Final",
+            "description": "Access your Git repositories"
+        },
+        {
+            "name": "JSch",
+            "metadata": {
+                "keywords": [
+                    "jsch",
+                    "ssh",
+                    "ssh2"
+                ],
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "stable",
+                "unlisted": "true"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jsch",
+            "version": "1.3.0.Final",
+            "description": "JSch is a pure Java implementation of SSH2 and allows you to connect to an sshd server and use port forwarding, X11 forwarding, file transfer, etc."
+        },
+        {
+            "name": "Narayana STM - Software Transactional Memory",
+            "metadata": {
+                "keywords": [
+                    "narayana-stm",
+                    "narayana",
+                    "stm",
+                    "transactions",
+                    "transaction",
+                    "software-transactional-memory",
+                    "tx",
+                    "txs"
+                ],
+                "guide": "https://quarkus.io/guides/software-transactional-memory",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-narayana-stm",
+            "version": "1.3.0.Final",
+            "description": "Offer Software Transactional Memory (stm) support"
+        },
+        {
+            "name": "Elytron Security JDBC",
+            "metadata": {
+                "keywords": [
+                    "security",
+                    "jdbc"
+                ],
+                "guide": "https://quarkus.io/guides/security-jdbc",
+                "categories": [
+                    "security"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security-jdbc",
+            "version": "1.3.0.Final",
+            "description": "Secure your applications with username/password stored in a database"
+        },
+        {
+            "name": "Security JPA",
+            "metadata": {
+                "keywords": [
+                    "security",
+                    "jpa",
+                    "orm",
+                    "panache"
+                ],
+                "guide": "https://quarkus.io/guides/security-jpa",
+                "categories": [
+                    "security"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-security-jpa",
+            "version": "1.3.0.Final",
+            "description": "Secure your applications with username/password stored in a database via JPA"
+        },
+        {
+            "name": "Vault",
+            "metadata": {
+                "keywords": [
+                    "vault",
+                    "security"
+                ],
+                "guide": "https://quarkus.io/guides/vault",
+                "categories": [
+                    "security"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vault",
+            "version": "1.3.0.Final",
+            "description": "Store your credentials securely in HashiCorp Vault"
+        },
+        {
+            "name": "Logging JSON",
+            "metadata": {
+                "keywords": [
+                    "logging",
+                    "json",
+                    "formatter"
+                ],
+                "categories": [
+                    "core"
+                ],
+                "status": "preview",
+                "guide": "https://quarkus.io/guides/logging#json-logging"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-logging-json",
+            "version": "1.3.0.Final",
+            "description": "Add JSON formatter for console logging"
+        },
+        {
+            "name": "Logging Sentry",
+            "metadata": {
+                "keywords": [
+                    "logging",
+                    "sentry",
+                    "cloud"
+                ],
+                "categories": [
+                    "core"
+                ],
+                "status": "preview",
+                "guide": "https://quarkus.io/guides/logging-sentry"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-logging-sentry",
+            "version": "1.3.0.Final",
+            "description": "Use Sentry, a self-hosted or cloud-based error monitoring solution"
+        },
+        {
+            "name": "Logging GELF",
+            "metadata": {
+                "keywords": [
+                    "logging",
+                    "gelf",
+                    "handler"
+                ],
+                "guide": "https://quarkus.io/guides/centralized-log-management",
+                "categories": [
+                    "core"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-logging-gelf",
+            "version": "1.3.0.Final",
+            "description": "Log using the Graylog Extended Log Format and centralize your logs in ELK or EFK"
+        },
+        {
+            "name": "Cache",
+            "metadata": {
+                "keywords": [
+                    "cache",
+                    "caching"
+                ],
+                "guide": "https://quarkus.io/guides/cache",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-cache",
+            "version": "1.3.0.Final",
+            "description": "Enable application data caching in CDI beans"
+        },
+        {
+            "name": "Qute Templating",
+            "metadata": {
+                "keywords": [
+                    "templating",
+                    "templates"
+                ],
+                "guide": "https://quarkus.io/guides/qute",
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "experimental"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-qute",
+            "version": "1.3.0.Final",
+            "description": "Offer templating support for web, email, etc in a build time, type-safe way"
+        },
+        {
+            "name": "RESTEasy Qute",
+            "metadata": {
+                "keywords": [
+                    "templating",
+                    "templates",
+                    "resteasy"
+                ],
+                "guide": "https://quarkus.io/guides/qute",
+                "categories": [
+                    "web"
+                ],
+                "status": "experimental"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-qute",
+            "version": "1.3.0.Final",
+            "description": "Qute Templating integration for RESTEasy"
+        },
+        {
+            "name": "Mutiny",
+            "metadata": {
+                "keywords": [
+                    "reactive streams",
+                    "reactive programming",
+                    "reactive",
+                    "RXJava",
+                    "Reactor"
+                ],
+                "categories": [
+                    "reactive"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-mutiny",
+            "version": "1.3.0.Final",
+            "description": "Write reactive applications with the modern Reactive Programming library Mutiny"
+        },
+        {
+            "name": "RESTEasy Mutiny",
+            "metadata": {
+                "keywords": [
+                    "resteasy-mutiny",
+                    "resteasy",
+                    "mutiny"
+                ],
+                "categories": [
+                    "web",
+                    "reactive"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-mutiny",
+            "version": "1.3.0.Final",
+            "description": "Mutiny support for RESTEasy"
+        },
+        {
+            "metadata": {
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx-graphql",
+            "version": "1.3.0.Final",
+            "name": "Quarkus - Quarkus - Vert.x GraphQL - Runtime",
+            "description": "Build parent to bring in required dependencies"
+        },
+        {
+            "name": "Camel Quarkus ActiveMQ",
+            "description": "Camel Quarkus ActiveMQ Support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "activemq",
+                    "messaging"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-activemq",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Async HTTP Client (AHC)",
+            "description": "Camel Quarkus Async HTTP Client (AHC) support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "http",
+                    "client"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-ahc",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Async HTTP Client (AHC) Web Socket",
+            "description": "Camel Quarkus Async HTTP Client (AHC) Web Socket support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "http",
+                    "websocket",
+                    "client"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-ahc-ws",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Attachments",
+            "description": "Java Attachments support for Camel Message",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "multipart"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-attachments",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS EC2",
+            "description": "A Camel Amazon EC2 Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-ec2",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS ECS",
+            "description": "A Camel Amazon ECS Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-ecs",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS EKS",
+            "description": "A Camel Amazon EKS Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-eks",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS IAM",
+            "description": "A Camel Amazon IAM Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-iam",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS Kinesis",
+            "description": "A Camel Amazon Kinesis Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-kinesis",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS KMS",
+            "description": "A Camel Amazon KMS Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-kms",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS Lambda",
+            "description": "A Camel Amazon Lambda Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud",
+                    "serverless"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-lambda",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS S3",
+            "description": "A Camel Amazon S3 Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-s3",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS SNS",
+            "description": "A Camel Amazon SNS Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-sns",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS SQS",
+            "description": "A Camel Amazon SQS Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-sqs",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS Translate",
+            "description": "A Camel Amazon Translate Web Service Component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-aws-translate",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Azure",
+            "description": "Camel Quarkus Azure Support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "cloud",
+                    "azure"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-azure",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Base64",
+            "description": "Camel Base64 component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "transformation"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-base64",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Bean",
+            "description": "Camel Bean component",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-bean",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Bean Validator",
+            "description": "Camel Java Beans Validation support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "bean"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-bean-validator",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Bindy",
+            "description": "Camel Bindy Data Format",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "bindy"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-bindy",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Box",
+            "description": "Camel Box support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "box"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-box",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Braintree",
+            "description": "Camel Quarkus Braintree support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "braintree"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-braintree",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Consul",
+            "description": "Camel Quarkus Consul",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "consul"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-consul",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus ControlBus",
+            "description": "Camel ControlBus support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "monitoring"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-controlbus",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Core",
+            "description": "The Camel Quarkus core module",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-core",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Core Cloud",
+            "description": "The Camel Quarkus core cloud module",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-core-cloud",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus CSV",
+            "description": "Camel CSV data format support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "csv",
+                    "file",
+                    "transformation"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-csv",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Data Format",
+            "description": "Camel Data Format support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "transformation"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-dataformat",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Direct",
+            "description": "Camel Direct component",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-direct",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Dozer",
+            "description": "Camel Dozer support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "dozer"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-dozer",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Endpoint DSL",
+            "description": "Camel Endpoint DSL",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-endpointdsl",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Exec",
+            "description": "Camel Exec component",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-exec",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus FHIR",
+            "description": "Camel FHIR HL7 support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "healthcare"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-fhir",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus File",
+            "description": "Camel File support",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-file",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus File Watch",
+            "description": "Camel File Watch component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "file",
+                    "watch"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-file-watch",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus FTP",
+            "description": "Camel FTP support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "ftp"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-ftp",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus GraphQL",
+            "description": "Camel Quarkus GraphQL Support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "graphql"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-graphql",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Gson",
+            "description": "Camel Gson Data Format",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "gson",
+                    "json",
+                    "dataformat"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-gson",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus HTTP",
+            "description": "Camel Quarkus HTTP",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "http"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-http",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus HTTP Common",
+            "description": "Camel Quarkus HTTP Common",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "http"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-http-common",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Hystrix",
+            "description": "Camel Hystrix support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "hystrix"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-hystrix",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus iCal",
+            "description": "Camel iCal Data Format",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "ical"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-ical",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Infinispan",
+            "description": "Camel Infinispan support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "infinispan",
+                    "cache"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-infinispan",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Jackson",
+            "description": "Camel Jackson support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "jackson",
+                    "json",
+                    "dataformat"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-jackson",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Jackson XML",
+            "description": "Camel Jackson XML support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "jackson",
+                    "xml",
+                    "dataformat"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-jacksonxml",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus JAXB dataformat",
+            "description": "Camel JAXB dataformat support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "jaxb",
+                    "transformation"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-jaxb",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus JDBC",
+            "description": "Camel JDBC support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "jdbc",
+                    "database"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-jdbc",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Jira",
+            "description": "Camel Jira support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "jira"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-jira",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus JMS",
+            "description": "Camel Quarkus JMS Support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "messaging",
+                    "jms"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-jms",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Johnzon",
+            "description": "Camel Johnzon Data Format",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "johnzon",
+                    "json",
+                    "dataformat"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-johnzon",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus JSON Path",
+            "description": "Camel JSON Path language",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "json"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-jsonpath",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Kafka",
+            "description": "Camel Kafka support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "kafka"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-kafka",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Kotlin",
+            "description": "Camel Quarkus Kotlin",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "kotlin"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration",
+                    "alt-languages"
+                ],
+                "status": "preview"
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-kotlin",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Log",
+            "description": "Camel Log support",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-log",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Zipfile",
+            "description": "Camel Zip file support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "lzf",
+                    "file"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-lzf",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Mail",
+            "description": "Camel Mail support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "mail"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-mail",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus MicroProfile Health",
+            "description": "Integration with the Quarkus MicroProfile Health extension",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "microprofile",
+                    "health"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-microprofile-health",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus MicroProfile Metrics",
+            "description": "Integration with the Quarkus MicroProfile Metrics extension",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "microprofile",
+                    "metrics"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-microprofile-metrics",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus MongoDB",
+            "description": "Camel Java MongoDB support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "mongo",
+                    "mongodb",
+                    "nosql",
+                    "datastore"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-mongodb",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Mustache",
+            "description": "Camel Mustache Support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "mustache",
+                    "transformation"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-mustache",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Netty",
+            "description": "Camel Netty xupport",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "netty"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-netty",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Netty HTTP",
+            "description": "Camel Netty HTTP support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "netty",
+                    "http"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-netty-http",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Olingo4",
+            "description": "Camel Quarkus Olingo4 Support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "olingo",
+                    "odata"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-olingo4",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus OpenTracing",
+            "description": "Distributed tracing using OpenTracing",
+            "metadata": {
+                "keywords": [
+                    "integration",
+                    "camel",
+                    "tracing",
+                    "opentracing"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-opentracing",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Paho",
+            "description": "Camel Eclipse Paho support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "paho",
+                    "mqtt"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-paho",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus PDF",
+            "description": "Camel PDF support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "pdf"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-pdf",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Platform HTTP",
+            "description": "HTTP platform component is used for integrating Camel HTTP with Quarkus HTTP layer",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "http"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-platform-http",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Reactive Executor",
+            "description": "Integrates Quarkus reactive executor with Camel",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "reactive"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-reactive-executor",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Reactive Streams",
+            "description": "Camel Reactive Streams component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "reactive-streams"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-reactive-streams",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Ref",
+            "description": "Camel Ref support",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-ref",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Rest",
+            "description": "Camel REST component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "rest"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-rest",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Salesforce",
+            "description": "Camel Salesforce component",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "salesforce"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-salesforce",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Scheduler",
+            "description": "Camel Scheduler support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "scheduling"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-scheduler",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus SEDA",
+            "description": "Camel SEDA support",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-seda",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Servlet",
+            "description": "Camel servlet transport support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "servlet",
+                    "http"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-servlet",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus SJMS",
+            "description": "Camel Quarkus JMS support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "messaging",
+                    "jms"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-sjms",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus SJMS2",
+            "description": "Camel Quarkus JMS 2.0 support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "messaging",
+                    "jms"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-sjms2",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Slack",
+            "description": "Camel Slack support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "slack"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-slack",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus SnakeYAML",
+            "description": "Camel SnakeYAML support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "yaml"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-snakeyaml",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus SQL",
+            "description": "Camel SQL support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "sql",
+                    "database"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-sql",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Stream",
+            "description": "Camel Quarkus Stream Support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "stream"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-stream",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support AHC",
+            "description": "Camel Quarkus Support AHC",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-ahc",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus AWS Commons",
+            "description": "A Camel Amazon Commons Component",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "aws",
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-aws",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Common",
+            "description": "Camel Quarkus Support Common",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-common",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Commons Logging",
+            "description": "Camel Quarkus Support Commons Logging",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "logging"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-commons-logging",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Consul Client",
+            "description": "Camel Quarkus Consul Client",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "cloud",
+                    "consul"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-consul-client",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Apache HTTP Client",
+            "description": "Camel Quarkus Support Apache HTTP Client",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "http"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-httpclient",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Jackson Dataformat XML",
+            "description": "Camel Quarkus Support Jackson Dataformat XML",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "jackson",
+                    "dataformat",
+                    "xml"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-jackson-dataformat-xml",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Jetty",
+            "description": "Camel Quarkus Support Jetty",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "jetty"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-jetty",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Policy",
+            "description": "Camel Quarkus Support Policy",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-policy",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Retrofit",
+            "description": "Camel Quarkus Support Retrofit",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "retrofit"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-retrofit",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Spring",
+            "description": "Camel Quarkus Support Spring",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "spring"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-spring",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support Xalan",
+            "description": "Camel Quarkus Support Xalan",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "xalan"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-xalan",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support XML",
+            "description": "Camel Quarkus Support XML",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "xml"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-xml",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Support XStream",
+            "description": "Camel Quarkus Support XStream",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "camel",
+                    "xstream"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-support-xstream",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus TagSoup",
+            "description": "Camel TagSoup support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "tagsoup",
+                    "tidymarkup"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-tagsoup",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Tarfile",
+            "description": "Camel Tar file support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "tar",
+                    "file"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-tarfile",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Telegram",
+            "description": "Camel Telegram support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "chat",
+                    "telegram"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-telegram",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Timer",
+            "description": "Camel Timer support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "scheduling"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-timer",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Twitter",
+            "description": "Camel Twitter support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "social",
+                    "twitter"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-twitter",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Validator",
+            "description": "Camel Validator support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "validation"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-validator",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus VM",
+            "description": "Camel VM support",
+            "metadata": {
+                "keywords": [
+                    "camel"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-vm",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus WebSocket JSR 356",
+            "description": "Camel WebSocket JSR 356 support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "websocket"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-websocket-jsr356",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus XML IO",
+            "description": "An XML stack for parsing XML route definitions. A fast an light weight alternative to camel-quarkus-xml-jaxp",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "xml"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-xml-io",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus XML JAXB",
+            "description": "An XML stack for parsing XML route definitions. A legacy alternative to the fast an light weight camel-quarkus-xml-io",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "xml",
+                    "jaxb"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-xml-jaxb",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus XML JAXP",
+            "description": "The Camel Quarkus XML Jaxp module",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "xml",
+                    "jaxp"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-xml-jaxp",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus XPath",
+            "description": "Camel Quarkus XPath Support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "xpath"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-xpath",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus XSLT",
+            "description": "Camel XSLT support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "xml"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ],
+                "status": "preview"
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-xslt",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus XStream",
+            "description": "Camel XStream support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "xstream"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-xstream",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Zipfile",
+            "description": "Camel Zip file support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "zip",
+                    "gzip",
+                    "file"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-zip-deflater",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "Camel Quarkus Zipfile",
+            "description": "Camel Zip file support",
+            "metadata": {
+                "keywords": [
+                    "camel",
+                    "zip",
+                    "file"
+                ],
+                "guide": "https://quarkus.io/guides/camel",
+                "categories": [
+                    "integration"
+                ]
+            },
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-zipfile",
+            "version": "1.0.0-M5"
+        },
+        {
+            "name": "AMQP 1.0 JMS client - Apache Qpid JMS",
+            "metadata": {
+                "keywords": [
+                    "amqp",
+                    "qpid-jms",
+                    "qpid",
+                    "jms",
+                    "artemis"
+                ],
+                "guide": "https://quarkus.io/guides/jms",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "preview"
+            },
+            "group-id": "org.amqphub.quarkus",
+            "artifact-id": "quarkus-qpid-jms",
+            "version": "0.13.0",
+            "description": "Use JMS APIs with AMQP 1.0 servers such as ActiveMQ Artemis, ActiveMQ 5, Qpid Broker-J, Qpid Dispatch router, Azure Service Bus, and more"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Web",
+            "id": "web",
+            "description": "Everything you need for REST endpoints, HTTP and web formats like JSON",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-resteasy",
+                    "io.quarkus:quarkus-resteasy-jsonb",
+                    "io.quarkus:quarkus-resteasy-jackson"
+                ]
+            }
+        },
+        {
+            "name": "Data",
+            "id": "data",
+            "description": "Accessing and managing your data (RDBMS, NoSQL, caching, transaction management, etc)",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-hibernate-orm",
+                    "io.quarkus:quarkus-hibernate-orm-panache",
+                    "io.quarkus:quarkus-jdbc-postgresql",
+                    "io.quarkus:quarkus-jdbc-mariadb",
+                    "io.quarkus:quarkus-jdbc-mysql",
+                    "io.quarkus:quarkus-jdbc-mssql",
+                    "io.quarkus:quarkus-jdbc-h2",
+                    "io.quarkus:quarkus-jdbc-derby"
+                ]
+            }
+        },
+        {
+            "name": "Messaging",
+            "id": "messaging",
+            "description": "Send and receives message to various messaging systems (AMQP, KAfka etc)",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-smallrye-reactive-messaging",
+                    "io.quarkus:quarkus-smallrye-reactive-messaging-amqp",
+                    "io.quarkus:quarkus-smallrye-reactive-messaging-kafka",
+                    "io.quarkus:quarkus-smallrye-reactive-messaging-mqtt"
+                ]
+            }
+        },
+        {
+            "name": "Core",
+            "id": "core",
+            "description": "Core Quarkus components: engine, logging, etc.",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-config-yaml",
+                    "io.quarkus:quarkus-logging-json"
+                ]
+            }
+        },
+        {
+            "name": "Reactive",
+            "id": "reactive",
+            "description": "Non blocking stack and connectors",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-vertx",
+                    "io.quarkus:quarkus-mutiny"
+                ]
+            }
+        },
+        {
+            "name": "Cloud",
+            "id": "cloud",
+            "description": "Useful for Cloud Native deployments platforms like Kubernetes and cloud providers",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-kubernetes",
+                    "io.quarkus:quarkus-smallrye-health",
+                    "io.quarkus:quarkus-smallrye-fault-tolerance"
+                ]
+            }
+        },
+        {
+            "name": "Observability",
+            "id": "observability",
+            "description": "Metrics, tracing, etc"
+        },
+        {
+            "name": "Security",
+            "id": "security",
+            "description": "Everything you need to secure your application",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-oidc",
+                    "io.quarkus:quarkus-smallrye-jwt"
+                ]
+            }
+        },
+        {
+            "name": "Integration",
+            "id": "integration",
+            "description": "Connectors to read to write from a skew of systems (file, S#, Twitter, etc)",
+            "metadata": {
+                "pinned": [
+                    "org.apache.camel.quarkus:camel-quarkus-core",
+                    "org.apache.camel.quarkus:camel-quarkus-core-xml"
+                ]
+            }
+        },
+        {
+            "name": "Business Automation",
+            "id": "business-automation",
+            "description": "Rules engine, BPM, etc"
+        },
+        {
+            "name": "Serialization",
+            "id": "serialization",
+            "description": "Serializing and deserializing various formats"
+        },
+        {
+            "name": "Miscellaneous",
+            "id": "miscellaneous",
+            "description": "Mixed bag of good stuff"
+        },
+        {
+            "name": "Compatibility",
+            "id": "compatibility",
+            "description": "Support for alternative programming models on Quarkus"
+        },
+        {
+            "name": "Alternative languages",
+            "id": "alt-languages",
+            "description": "Support for other JVM based languages"
+        }
+    ]
+}
