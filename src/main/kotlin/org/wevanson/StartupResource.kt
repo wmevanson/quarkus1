@@ -17,11 +17,8 @@ class StartupResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/name/{person}")
-    fun getName(@PathParam person: String): String {
-        println("name sent: $person")
-        val greet = greetingService.greeting($person)
-        return "Hello $greet"
-    } 
+    fun getName(@PathParam person: String) =
+        "Hello ${greetingService.greeting(person)}"
 
     @Produces(MediaType.TEXT_PLAIN)
     fun hello() = "hello"
